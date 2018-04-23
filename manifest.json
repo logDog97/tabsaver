@@ -1,0 +1,28 @@
+{
+    "name": "Tab Saver",
+    "description" : "A beautiful, nifty utility to keep tab-management at ease, while also saving you boat-loads of memory when you need it most!",
+    "version": "1.0",
+    "permissions" : ["tabs", "storage"],
+    "background": {
+        "scripts": ["logic.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup" : "popup.html",
+        "default_icon" : {
+            "16": "images/tsaver16.png",
+            "32": "images/tsaver32.png",
+            "48": "images/tsaver48.png",
+            "128": "images/tsaver128.png"
+        },
+        "default_title": "Tab Saver"
+    },
+    "icons": {
+        "16": "images/tsaver16.png",
+        "32": "images/tsaver32.png",
+        "48": "images/tsaver48.png",
+        "128": "images/tsaver128.png"
+    },
+    "manifest_version": 2
+}
+

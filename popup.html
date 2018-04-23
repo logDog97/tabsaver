@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark">
+        <div class="navbar-brand d-flex flex-row">
+            <img src="images/tsaver128.png" width=32px height=32px class="d-inline-block">
+            <div class="d-inline-block brand-font">Tab Saver</div>    
+        </div>
+    </nav> 
+    <div class="jumbotron">
+        <div class="display-4">Current Tabs</div>
+        Tabs to be saved:
+        <div class="btn-group btn-group-toggle btn-group-vertical" data-toggle="buttons" id="tabList"></div>
+    </div>
+    <div class="jumbotron">
+        <div class="display-4">Quick Tasks</div>
+        <button class="btn btn-primary brand-font d-inline-block" id="quickSaveState">Quick Save State</button><br>
+        <button class="btn btn-primary brand-font" id="quickLoadState">Quick Load</button><br>
+        <button class="btn btn-primary brand-font" id="clearTabs">Clear Tabs</button>
+    </div>
+    <div class="jumbotron">
+        <div class="display-4">Manage Sessions</div>
+        <div>Save current session as:</div>
+        <input type="text" class="form-control" id="saveName" placeholder="Session name">
+        <button class="btn btn-primary brand-font d-inline-block" id="saveSession">Save</button><br>
+        <div class="btn-group btn-group-toggle btn-group-vertical d-flex flex-column" data-toggle="buttons" id="sessionList"></div><br>
+        <button class="btn btn-primary brand-font" id="loadSession">Load Selected Session</button><br>
+        <button class="btn btn-primary brand-font" id="deleteSession">Delete Selected Session</button>
+    </div>
+    <script src="popup.js"></script>
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+</body>
+</html> 
